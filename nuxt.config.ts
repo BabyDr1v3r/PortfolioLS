@@ -19,8 +19,7 @@ export default defineNuxtConfig({
     lazy: true,
     defaultLocale: 'en-US',
     langDir: 'locales',
-    strategy: 'no_prefix',
-    vueI18n: './i18n.config.ts'
+    strategy: 'no_prefix'
   },
   vite: {
     optimizeDeps: {
