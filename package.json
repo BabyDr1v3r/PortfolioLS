@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@headlessui/vue": "^0.0.0-insiders.b6f355d",
+    "@nuxtjs/i18n": "^9.1.3",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@valko-ui/components": "^0.2.0",
     "nuxt": "3.13.2",

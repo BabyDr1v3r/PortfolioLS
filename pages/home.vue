@@ -6,13 +6,13 @@ const downloadResume = () => {
   link.click()
 }
 
-const lang = useCookie('lang', {
-  default: () => 'en'
+const theme = useCookie('theme', {
+  default: () => 'dark'
 })
 
 const phrases = [
-  'FullStack </>  ',
-  'Web-Developer  ',
+  'Full-Stack </>  ',
+  'Web Developer  ',
   'VueJS & React  ',
   'CS:GO <3  '
 ]
@@ -49,59 +49,53 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="absolute w-full">
-    <vk-navbar
-      floating
-      fixed
-      color="neutral"
-      shape="rounded"
-      flat
-    >
-      <site-links />
-    </vk-navbar>
-  </header>
+  <div class="w-full flex items-center justify-between h-full max-w-screen-xl mx-auto animate-slideIn">
+    <div>
+      <h1 class="text-6xl md:text-8xl font-extrabold flex flex-col font-display">
+        <span class="bg-gradient-to-r from-primary-500 to-error-500 bg-clip-text text-transparent leading-[8rem]">Exequiel</span>
+        <span class="bg-gradient-to-r from-error-500 to-primary-500 bg-clip-text text-transparent leading-[8rem] -mt-7">Segura</span>
+      </h1>
+      <p
+        id="typing-text"
+        class="text-2xl md:text-4xl mt-4 font-light"
+      >
+        {{ currentText }}
+      </p>
 
-  <main class="relative h-screen w-screen">
-    <div class="absolute inset-0 bg-gradient-to-br from-black to-white dark:from-white dark:to-black opacity-50" />
-
-    <div class="relative z-10 flex items-center justify-between h-full max-w-screen-xl mx-auto animate-slideIn">
-      <div>
-        <h1 class="text-6xl md:text-8xl font-extrabold flex flex-col gap-2">
-          <span class="bg-gradient-to-r from-primary-500 to-error-500 bg-clip-text text-transparent">Exequiel</span>
-          <span class="bg-gradient-to-r from-error-500 to-primary-500 bg-clip-text text-transparent">Segura</span>
-        </h1>
-        <p
-          id="typing-text"
-          class="text-2xl md:text-3xl mt-4 font-semibold"
-        >
-          {{ currentText }}
-        </p>
+      <div class="flex gap-4 mt-8">
+        <vk-button
+        href="/resume.pdf"
+        size="lg"
+        flat
+        class="flex justify-between items-center gap-2"
+        @click="downloadResume"
+      >
+        <vk-icon name="download" class="text-xl"/>
+        {{ $t('pages.home.resume') }}
+      </vk-button>
 
         <vk-button
-          href="/resume.pdf"
           variant="outlined"
-          size="lg"
           color="neutral"
-          condensed
+          size="lg"
           flat
-          class="mt-4 flex justify-between px-4 py-2 w-48 items-center"
-          @click="downloadResume"
+          class="flex justify-between items-center gap-2"
+          @click="navigateTo('/contact')"
         >
-          {{ lang === 'en' ? 'Resume' : 'Curriculum' }}
-          <vk-icon name="download" class="text-2xl"/>
+          <vk-icon name="message" class="text-xl"/>
+          {{ $t('pages.home.contact') }}
         </vk-button>
       </div>
-
-      <div class="flex justify-end relative size-96 rounded-full overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-10"></div>
-        <img
-          src="/profile.png"
-          alt="Exequiel Segura"
-          class="size-96 object-cover rounded-full shadow-lg"
-        />
-      </div>
     </div>
-  </main>
+
+    <div class="size-96 rounded-full overflow-hidden shadow-lg">
+      <img
+        :src="theme === 'dark' ? '/profile-dark.webp' : '/profile-light.webp'"
+        :alt="$t('pages.home.img-alt')"
+        class="object-cover"
+      />
+    </div>
+  </div>
 </template>
 
 <style scoped>

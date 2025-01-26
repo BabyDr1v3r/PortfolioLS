@@ -20,6 +20,11 @@ export default {
           '0%': { transform: 'translateY(30px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         }
+      },
+      fontFamily: {
+        'sans': ['Ubuntu', 'sans-serif'],
+        'serif': ['Fjord One', 'serif'],
+        'display': ['Audiowide', 'Fjord One', 'serif']
       }
     }
   }

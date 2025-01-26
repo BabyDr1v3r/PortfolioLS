@@ -1,22 +1,21 @@
 <script setup lang="ts">
 import type { Item } from '#valkoui'
 
-defineOptions({ name: 'ThemeSwitch' })
+defineOptions({ name: 'LangSwitch' })
 
-const lang = useCookie('lang', {
-  default: () => 'en'
+const { locale, locales, setLocale } = useI18n()
+
+const language = computed({
+  get: () => locale.value,
+  set: (value: typeof locales.value[number]['code']) => setLocale(value)
 })
 
-const langs: ComputedRef<Item[]> = computed(() => {
-  return lang.value === 'en'
-  ? [
-      { key: 'es', title: 'Spanish', onClick: () => lang.value = 'es' },
-      { key: 'en', title: 'English', onClick: () => lang.value = 'en' }
-    ]
-  : [
-    { key: 'es', title: 'Español', onClick: () => lang.value = 'es' },
-    { key: 'en', title: 'Inglés', onClick: () => lang.value = 'en' }
-  ]
+const langs: Item[] = locales.value.map((localeData) => {
+  return {
+    key: localeData.code,
+    title: localeData.name || localeData.code,
+    onClick: () => language.value = localeData.code
+  }
 })
 </script>
 

@@ -1,0 +1,75 @@
+{
+  "components": {
+    "site-links": {
+      "home": "Home",
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Let's Connect"
+    }
+  },
+  "pages": {
+    "home": {
+      "resume": "Resume",
+      "contact": "Let's Connect",
+      "img-alt": "Profile picture for the homepage."
+    },
+    "about": {
+      "title": "About Me",
+      "introduction": {
+        "title": "Who I Am",
+        "description": "I enjoy the process of starting a project, tackling challenges, and watching everything come together in the end. I do my best to ensure that my work is held to the highest industry standards. I’m always eager to learn from my teammates, share my knowledge and expand my skills."
+      },
+      "hobbies": {
+        "title": "Hobbies",
+        "item-1": "Gaming",
+        "item-2": "Motorcycling",
+        "item-3": "Football",
+        "item-4": "Reading",
+        "item-5": "Anime",
+        "item-6": "Touching Grass"
+      },
+      "languages": {
+        "title": "Languages",
+        "lang-1": {
+          "name": "Spanish",
+          "level": "Native"
+        },
+        "lang-2": {
+          "name": "English",
+          "level": "Fluid"
+        }
+      },
+      "work-experience": {
+        "title": "Work Experience",
+        "item-1": {
+          "title": "Software Engineer at ValkoDevs",
+          "time": "October 2023 - Present",
+          "description": "Contributed to the development of a component library using Vue.js, TypeScript, and TailwindCSS. Responsible for implementing and testing UI components, ensuring a cohesive design system and efficient workflows."
+        }
+      },
+      "toolbox": {
+        "title": "My Toolbox"
+      }
+    },
+    "projects": {
+      "title": "My Projects",
+      "subtitle": "A showcase of some of the projects I've worked on recently.",
+      "item-1": {
+        "title": "ValkoUI Component Library",
+        "description": "A customizable component library built with Vue3, TypeScript, and TailwindCSS."
+      }
+    },
+    "contact": {
+      "title": "Let's Connect",
+      "subtitle": "I'm currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send",
+      "feedback": {
+        "form": "All fields are required.",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Try again later."
+      }
+    }
+  }
+}
