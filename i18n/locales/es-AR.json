@@ -7,7 +7,7 @@
       "contact": "Conectemos"
     }
   },
-  "pages": {
+  "sections": {
     "home": {
       "resume": "Curriculum",
       "contact": "Conectemos",
@@ -65,10 +65,21 @@
       "subject": "Asunto",
       "message": "Mensaje",
       "submit": "Enviar",
-      "feedback": {
-        "form": "Todos los campos son obligatorios.",
-        "success": "¡Mensaje enviado con éxito!",
-        "error": "Error al enviar el mensaje. Intenta de nuevo más tarde."
+      "validation": {
+        "form": {
+          "email": {
+            "invalid": "Please enter a valid email address.",
+            "required": "Email is required."
+          },
+          "subject": {
+            "required": "Subject is required."
+          },
+          "message": {
+            "required": "Message is required."
+          }
+        },
+        "success": "Your message has been sent i will get back to you as fast as possible!",
+        "error": "Failed to send message. Try again later."
       }
     }
   }

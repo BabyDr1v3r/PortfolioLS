@@ -13,13 +13,37 @@ export default {
   theme: {
     extend: {
       animation: {
-        slideIn: 'slideIn 0.6s ease-out forwards',
+        slideInRight: 'slideInRight 0.6s ease-out forwards',
+        slideOutRight: 'slideOutRight 0.6s ease-out forwards',
+        slideInLeft: 'slideInLeft 0.6s ease-out forwards',
+        slideOutLeft: 'slideOutLeft 0.6s ease-out forwards',
+        float: 'float 3s ease-in-out infinite',
+        blink: 'blink 1.5s step-end infinite',
       },
       keyframes: {
-        slideIn: {
-          '0%': { transform: 'translateY(30px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        }
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideOutRight: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(100%)', opacity: '0' },
+        },
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideOutLeft: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(-100%)', opacity: '0' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0) rotate(var(--tw-rotate))' },
+          '50%': { transform: 'translateY(-10px) rotate(var(--tw-rotate))' },
+        },
+        blink: {
+          '50%': { opacity: '0' },
+        },
       },
       fontFamily: {
         'sans': ['Ubuntu', 'sans-serif'],

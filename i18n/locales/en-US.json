@@ -7,7 +7,7 @@
       "contact": "Let's Connect"
     }
   },
-  "pages": {
+  "sections": {
     "home": {
       "resume": "Resume",
       "contact": "Let's Connect",
@@ -36,7 +36,7 @@
         },
         "lang-2": {
           "name": "English",
-          "level": "Fluid"
+          "level": "Fluent"
         }
       },
       "work-experience": {
@@ -55,7 +55,7 @@
       "title": "My Projects",
       "subtitle": "A showcase of some of the projects I've worked on recently.",
       "item-1": {
-        "title": "ValkoUI Component Library",
+        "title": "ValkoUI: Component Library",
         "description": "A customizable component library built with Vue3, TypeScript, and TailwindCSS."
       }
     },
@@ -65,9 +65,20 @@
       "subject": "Subject",
       "message": "Message",
       "submit": "Send",
-      "feedback": {
-        "form": "All fields are required.",
-        "success": "Message sent successfully!",
+      "validation": {
+        "form": {
+          "email": {
+            "invalid": "Please enter a valid email address.",
+            "required": "Email is required."
+          },
+          "subject": {
+            "required": "Subject is required."
+          },
+          "message": {
+            "required": "Message is required."
+          }
+        },
+        "success": "Your message has been sent i will get back to you as fast as possible!",
         "error": "Failed to send message. Try again later."
       }
     }

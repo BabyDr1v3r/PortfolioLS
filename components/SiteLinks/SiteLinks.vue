@@ -7,58 +7,58 @@ const route = useRoute()
 <template>
   <nav class="flex w-full">
     <div class="flex items-center gap-4">
-      <nuxt-link to="/" class="flex items-center mr-auto">
+      <a href="#hero" class="flex items-center mr-auto">
         <vk-avatar src="/profile.png" shape="rounded" size="xs" flat />
-      </nuxt-link>
+      </a>
 
       <ul class="flex gap-2">
         <li>
-          <nuxt-link to="/home">
+          <a href="#hero">
             <vk-button
               variant="link"
               shape="rounded"
-              :color="route.fullPath === '/home' ? 'primary' : 'neutral'"
+              :color="route.hash === '#hero' ? 'primary' : 'neutral'"
               size="sm"
             >
               {{ $t('components.site-links.home') }}
             </vk-button>
-          </nuxt-link>
+          </a>
         </li>
         <li>
-          <nuxt-link to="/about">
+          <a href="#projects">
             <vk-button
               variant="link"
               shape="rounded"
-              :color="route.fullPath.startsWith('/about') ? 'primary' : 'neutral'"
-              size="sm"
-            >
-              {{ $t('components.site-links.about') }}
-            </vk-button>
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/projects">
-            <vk-button
-              variant="link"
-              shape="rounded"
-              :color="route.fullPath.startsWith('/projects') ? 'primary' : 'neutral'"
+              :color="route.hash === '#projects' ? 'primary' : 'neutral'"
               size="sm"
             >
               {{ $t('components.site-links.projects') }}
             </vk-button>
-          </nuxt-link>
+          </a>
         </li>
         <li>
-          <nuxt-link to="/contact">
+          <a href="#about">
             <vk-button
               variant="link"
               shape="rounded"
-              :color="route.fullPath.startsWith('/contact') ? 'primary' : 'neutral'"
+              :color="route.hash === '#about' ? 'primary' : 'neutral'"
+              size="sm"
+            >
+              {{ $t('components.site-links.about') }}
+            </vk-button>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <vk-button
+              variant="link"
+              shape="rounded"
+              :color="route.hash === '#contact' ? 'primary' : 'neutral'"
               size="sm"
             >
               {{ $t('components.site-links.contact') }}
             </vk-button>
-          </nuxt-link>
+          </a>
         </li>
       </ul>
     </div>

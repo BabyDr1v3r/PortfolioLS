@@ -1,15 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2025-01-01',
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
       emailJsKey: process.env.NUXT_PUBLIC_EMAILJS_KEY,
     }
   },
-  routeRules: {
-    '/': { redirect: '/home' }
-  },
+  pages: false,
   modules: ['@nuxtjs/tailwindcss', '@valko-ui/components/nuxt', '@nuxtjs/i18n'],
   i18n: {
     locales: [
