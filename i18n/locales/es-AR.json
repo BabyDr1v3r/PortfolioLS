@@ -1,0 +1,86 @@
+{
+  "components": {
+    "site-links": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "projects": "Mis Proyectos",
+      "contact": "Conectemos"
+    }
+  },
+  "sections": {
+    "home": {
+      "resume": "Curriculum",
+      "contact": "Conectemos",
+      "img-alt": "Foto de perfil para la pagina de inicio."
+    },
+    "about": {
+      "title": "Acerca de Mí",
+      "introduction": {
+        "title": "Quién Soy",
+        "description": "Disfruto de empezar proyectos, enfrentar desafios y ver el fruto de nuestro esfuerzo al final. Hago mi mejor esfuerzo para asegurarme de que mi trabajo siga los mas altos estándares de la industria. Me emociona aprender de mis compañeros, compartir mis conocimientos y mejorar mis habilidades."
+      },
+      "hobbies": {
+        "title": "Pasatiempos",
+        "item-1": "Video Juegos",
+        "item-2": "Motociclismo",
+        "item-3": "Fútbol",
+        "item-4": "Leer",
+        "item-5": "Anime",
+        "item-6": "Tocar Pasto"
+      },
+      "languages": {
+        "title": "Idiomas",
+        "lang-1": {
+          "name": "Español",
+          "level": "Nativo"
+        },
+        "lang-2": {
+          "name": "Inglés",
+          "level": "B2"
+        }
+      },
+      "work-experience": {
+        "title": "Experiencia Laboral",
+        "item-1": {
+          "title": "Ingeniero de Software en ValkoDevs",
+          "time": "Octubre 2023 - Presente",
+          "description": "Contribuí al desarrollo de una librería de componentes utilizando Vue.js, TypeScript y TailwindCSS. Responsable de implementar y probar componentes de UI, asegurando un sistema de diseño coherente y flujos de trabajo eficientes."
+        }
+      },
+      "toolbox": {
+        "title": "Mis Herramientas"
+      }
+    },
+    "projects": {
+      "title": "Mis Proyectos",
+      "subtitle": "Una muestra de algunos de los proyectos en los que he trabajado recientemente.",
+      "item-1": {
+        "title": "ValkoUI: Libreria de Componentes",
+        "description": "Una libreria de componentes personalizables creada con Vue3, TypeScript y TailwindCSS."
+      }
+    },
+    "contact": {
+      "title": "Conectemos",
+      "subtitle": "Actualmente estoy buscando nuevas oportunidades. Mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta o solo quieras saludar, haré lo mejor que pueda para responderte.",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar",
+      "validation": {
+        "form": {
+          "email": {
+            "invalid": "Please enter a valid email address.",
+            "required": "Email is required."
+          },
+          "subject": {
+            "required": "Subject is required."
+          },
+          "message": {
+            "required": "Message is required."
+          }
+        },
+        "success": "Your message has been sent i will get back to you as fast as possible!",
+        "error": "Failed to send message. Try again later."
+      }
+    }
+  }
+}
