@@ -1,75 +1,23 @@
-# Nuxt Minimal Starter
+# Hello, I'm Exequiel Segura 👋
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+I'm a passionate **Web Developer** with expertise in creating efficient and user-friendly applications. Currently, I'm focused on developing a library of reusable UI components using **Vue 3**, **TypeScript**, and **TailwindCSS**. My goal is to enhance front-end development efficiency and user experience through highly customizable, accessible, and responsive designs.
 
-## Setup
+## 🌟 Technologies I Work With
 
-Make sure to install dependencies:
+- **Languages**: TypeScript, JavaScript, CSS, SASS
+- **Frontend**: VueJS, React, Nuxt ,Next.js, TailwindCSS
+- **Backend**: NestJS, Express ,Fastify ,Node.js
+- **Frameworks**: Vue.js, Nuxt.js, React.js
+- **Testing**: Vitest, Jest
+- **Tools**: GitHub, Postman, Insomnia, Docker
+- **Database**: MySQL, Prisma, PostgreSQL
 
-```bash
-# npm
-npm install
+## 📈 Current Projects
 
-# pnpm
-pnpm install
+- Developing a library of reusable UI components to streamline front-end workflows.
 
-# yarn
-yarn install
+## 📫 Let's Connect!
 
-# bun
-bun install
-```
+Feel free to reach out through my LinkedIn or check out my projects below!
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[LinkedIn](https://www.linkedin.com/in/exequiel-segura/) | [GitHub](https://github.com/BabyDr1v3r) | [Portfolio](https://exequiel-segura.vercel.app)
