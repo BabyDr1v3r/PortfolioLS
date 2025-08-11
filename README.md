@@ -14,9 +14,9 @@
 
 ## 📈 Current Projects
 
-Built a reusable UI components library to streamline front-end workflows.
-In progress: Private web app with data processing and user insights features.
-In progress: Private healthcare-oriented app focused on usability and performance.
+- Built a reusable UI components library to streamline front-end workflows.
+- In progress: Private web app with data processing and user insights features.
+- In progress: Private healthcare-oriented app focused on usability and performance.
 
 ## 📫 Let's Connect!
 
