@@ -1,20 +1,22 @@
 # Hello, I'm Exequiel Segura 👋
 
-I'm a passionate **Web Developer** with expertise in creating efficient and user-friendly applications. Currently, I'm focused on developing a library of reusable UI components using **Vue 3**, **TypeScript**, and **TailwindCSS**. My goal is to enhance front-end development efficiency and user experience through highly customizable, accessible, and responsive designs.
+ Software engineer with 3 years of experience with a strong focus on frontend development, especially using Vue/Nuxt and modern CSS tools. Experienced in
+ building reusable component libraries and accessible interfaces, with backend knowledge to support fullstack collaboration.
 
 ## 🌟 Technologies I Work With
 
 - **Languages**: TypeScript, JavaScript, CSS, SASS
 - **Frontend**: VueJS, React, Nuxt ,Next.js, TailwindCSS
 - **Backend**: NestJS, Express ,Fastify ,Node.js
-- **Frameworks**: Vue.js, Nuxt.js, React.js
 - **Testing**: Vitest, Jest
 - **Tools**: GitHub, Postman, Insomnia, Docker
 - **Database**: MySQL, Prisma, PostgreSQL
 
 ## 📈 Current Projects
 
-- Developing a library of reusable UI components to streamline front-end workflows.
+Built a reusable UI components library to streamline front-end workflows.
+In progress: Private web app with data processing and user insights features.
+In progress: Private healthcare-oriented app focused on usability and performance.
 
 ## 📫 Let's Connect!
 
